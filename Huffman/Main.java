@@ -25,8 +25,8 @@ public class Main {
             return; 
         } 
   
-       imprimircodig(raiz.izq, s + "0"); 
-       imprimircodig(raiz.der, s + "1"); 
+       imprimircodigo(raiz.izq, s + "0"); 
+       imprimircodigo(raiz.der, s + "1"); 
     } 
   
    
