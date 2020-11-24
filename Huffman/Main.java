@@ -11,22 +11,22 @@ import java.util.Comparator;
 public class Main { 
   
 
-    public static void imprimircodigo(Nodo root, String s) 
+    public static void imprimircodigo(Nodo raiz, String s) 
     { 
    
-        if (root.izq 
+        if (raiz.izq 
                 == null
-            && root.der 
+            && raiz.der 
                    == null
-            && Character.isLetter(root.c)) { 
+            && Character.isLetter(raiz.c)) { 
 
-            System.out.println(root.c + ":" + s); 
+            System.out.println(raiz.c + ":" + s); 
   
             return; 
         } 
   
-       imprimircodig(root.izq, s + "0"); 
-       imprimircodig(root.der, s + "1"); 
+       imprimircodig(raiz.izq, s + "0"); 
+       imprimircodig(raiz.der, s + "1"); 
     } 
   
     // main function 
@@ -65,7 +65,7 @@ public class Main {
         } 
   
 
-        Nodo root = null; 
+        Nodo raiz = null; 
   
 
         while (q.size() > 1) { 
@@ -90,12 +90,12 @@ public class Main {
 
             f.der = y; 
 
-            root = f; 
+            raiz = f; 
  
             q.add(f); 
         } 
 
-        printCode(root, ""); 
+        imprimircodigo(raiz, ""); 
     } 
 } 
   
