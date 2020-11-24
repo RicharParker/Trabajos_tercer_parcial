@@ -29,7 +29,7 @@ public class Main {
        imprimircodig(raiz.der, s + "1"); 
     } 
   
-    // main function 
+   
     public static void main(String[] args) 
     { 
   
