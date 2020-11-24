@@ -15,20 +15,20 @@ public class Lista {
         this.temporal=0;
     }
     //Metodo de ordenamiento Quick
-     public void quick(int[] arreglo, int primero, int ultimo){//recibe 3 parametros, primero posicion 0, ultimo indice del arreglo
+     public void quick(int[] arreglo, int primero, int ultimo){
          int i,j,pivote,auxiliar;
          i=primero;
          j=ultimo;
-         pivote=arreglo[(primero+ultimo)/2];//para dividir a nuestro arreglo a la mitad
+         pivote=arreglo[(primero+ultimo)/2];
          System.out.println("El pivote es " + pivote);
          do{
-             while(arreglo[i]<pivote){//mientras arreglo en la posicion i sea menor a pivote
-                 i++;//vamos a incrementar al contador i
+             while(arreglo[i]<pivote){
+                 i++;
              }
-             while(arreglo[j]>pivote){//esto es para ir moviendo los indices(en teoria)
+             while(arreglo[j]>pivote){
                  j--;
              }
-             //Aqui hacemos el intercambio
+             
              if(i<=j){
                  auxiliar=arreglo[i];
                  arreglo[i]=arreglo[j];
@@ -42,11 +42,11 @@ public class Lista {
          }
          if(i<ultimo){
              quick(arreglo, i, ultimo);
-         }//esto es lo que estara haciendo las subdivisiones en sublistas
+         }
          mostrarArreglo(arreglo);
      }
     
-    //Muestra los datos del vector
+    
     public void mostrarArreglo(int [] arreglo){
         int k;//creamos variable local
         for(k=0;k<arreglo.length;k++){
