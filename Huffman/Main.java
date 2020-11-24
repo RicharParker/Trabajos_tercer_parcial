@@ -11,7 +11,7 @@ import java.util.Comparator;
 public class Main { 
   
 
-    public static void printCode(Nodo root, String s) 
+    public static void imprimircodigo(Nodo root, String s) 
     { 
    
         if (root.izq 
@@ -25,8 +25,8 @@ public class Main {
             return; 
         } 
   
-        printCode(root.izq, s + "0"); 
-        printCode(root.der, s + "1"); 
+       imprimircodig(root.izq, s + "0"); 
+       imprimircodig(root.der, s + "1"); 
     } 
   
     // main function 
