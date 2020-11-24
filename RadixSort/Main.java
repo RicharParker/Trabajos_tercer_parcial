@@ -11,10 +11,10 @@ public class Main {
     public static void main(String[] args) {
         Radix Rx = new Radix();
         
-        for(int i = 0; i < 1000001; ++i)
+        for(int i = 0; i < 1000000; ++i)
         {
             Random rng = new Random();
-            int valorDado = rng.nextInt(100001); 
+            int valorDado = rng.nextInt(100000); 
             Rx.insertar(valorDado);
         }
         
